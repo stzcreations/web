@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+
+/config/database.php
+
+/uploads/*
+!/uploads/.gitkeep
+
+/install/installed.lock
+
+.DS_Store
+Thumbs.db
+*.log
