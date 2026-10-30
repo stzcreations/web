@@ -1,3 +1,4 @@
+ HEAD
 # STZ Creations - Project Download Library
 
 Pure PHP 8.2+ + MySQL project download library website.
@@ -31,3 +32,7 @@ See spec. Main entry points: index.php, browse.php, project.php, download.php, a
 - Project files stored in `storage/projects` (denied direct access).
 - Downloads served via `download.php` with validation.
 - CSRF protection on all forms.
+=======
+# stz-creations
+A premium dynamic portfolio website for STZ Creations, built with PHP and MySQL. Features a secure admin dashboard, project management, social media integration, and customizable website settings.
+>>>>>>> 350f63def0527ac9c80f0ff2b4d440283bc32805
