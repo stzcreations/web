@@ -1,0 +1,27 @@
+.admin-sidebar { background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%); }
+.admin-sidebar .nav-link { color: #334155; border-radius: 8px; padding: 10px 14px; margin-bottom: 4px; font-weight: 500; transition: all .2s; }
+.admin-sidebar .nav-link:hover { background: rgba(37,99,235,.1); color: #1d4ed8; }
+.admin-sidebar .nav-link.active { background: linear-gradient(90deg,#2563eb,#1d4ed8); color: #fff; }
+.admin-topbar { background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+.card-dark { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+.stat-box { background: linear-gradient(135deg,#fff,#f8fafc); border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,.04); transition: transform .2s; }
+.stat-box:hover { transform: translateY(-3px); }
+.stat-box .num { font-size: 2rem; font-weight: 800; background: linear-gradient(90deg,#2563eb,#1d4ed8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.table-darkish { background: #fff; color: #0f172a; }
+.table-darkish th { background: #f1f5f9; font-weight: 600; }
+.table-darkish th, .table-darkish td { border-color: #e2e8f0; }
+.form-control, .form-select { background: #f8fafc; border: 1px solid #e2e8f0; color: #0f172a; }
+.form-control:focus, .form-select:focus { background: #fff; border-color: #2563eb; box-shadow: 0 0 0 .2rem rgba(37,99,235,.15); }
+.btn-glow { background: linear-gradient(90deg,#2563eb,#1d4ed8); color: #fff; border: none; box-shadow: 0 4px 12px rgba(37,99,235,.25); border-radius: 10px; }
+.btn-glow:hover { color: #fff; box-shadow: 0 6px 16px rgba(37,99,235,.35); transform: translateY(-1px); }
+.btn-outline-glow { border: 1px solid #2563eb; color: #2563eb; border-radius: 10px; background: #fff; }
+.btn-outline-glow:hover { background: rgba(37,99,235,.08); color: #1d4ed8; }
+@media (min-width: 768px) {
+  .admin-sidebar { min-height: 100vh; border-right: 1px solid #e2e8f0; border-bottom: none; }
+  #adminSidebar { width: 240px; }
+}
+@media (max-width: 768px) {
+  .table-darkish { font-size: .85rem; }
+  .table-darkish th, .table-darkish td { padding: .5rem .4rem; }
+  .stat-box .num { font-size: 1.5rem; }
+}

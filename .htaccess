@@ -1,0 +1,33 @@
+RewriteEngine On
+RewriteBase /stzcreations/
+
+# Allow existing files/dirs
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Frontend clean URLs
+RewriteRule ^$ index.php [L]
+RewriteRule ^browse/?$ browse.php [L,QSA]
+RewriteRule ^latest/?$ latest.php [L,QSA]
+RewriteRule ^popular/?$ popular.php [L,QSA]
+RewriteRule ^my-downloads/?$ my-downloads.php [L,QSA]
+RewriteRule ^categories/?$ categories.php [L,QSA]
+RewriteRule ^category/([a-z0-9-]+)/?$ category.php?slug=$1 [L,QSA]
+RewriteRule ^project/([a-z0-9-]+)/?$ project.php?slug=$1 [L,QSA]
+RewriteRule ^search/?$ search.php [L,QSA]
+RewriteRule ^login/?$ login.php [L,QSA]
+RewriteRule ^register/?$ register.php [L,QSA]
+RewriteRule ^logout/?$ logout.php [L,QSA]
+RewriteRule ^demo-login/?$ demo-login.php [L,QSA]
+RewriteRule ^download/([0-9]+)/?$ download.php?id=$1 [L,QSA]
+RewriteRule ^go=(.+)$ download.php?slug=$1 [L,QSA]
+RewriteRule ^go/(.+)$ download.php?slug=$1 [L,QSA]
+
+# Admin router
+RewriteRule ^admin/?$ admin/index.php [L,QSA]
+RewriteRule ^admin/(.*)$ admin/index.php?route=$1 [L,QSA]
+
+# Sitemap & robots
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]
